@@ -1,0 +1,53 @@
+h1, h2 {
+      display: flex;
+      justify-content: center;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+div {
+    margin: auto;
+    border: solid 3px #add8e6;
+    border-radius: 6px;
+    width: 30%;
+    text-align: center;
+    padding: 12px;
+}
+
+#wartoscP {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+#wartoscAND_NOR_XOR1 {
+    margin-right: 93px;
+}
+
+
+img {
+    display: flex;
+    margin: auto;
+}
+
+hr {
+    width: 40%;
+    border: solid 3px #add8e6;
+    box-shadow: 0px 13px 28px 0px rgba(119, 153, 163, 1);
+}
+
+/*rozmieszczenie przycisków */
+#x2, #u3, #p3{
+    margin-left: 30px;
+}
+
+#w3 {
+    margin-left: 30px;
+}
+
+#r3 {
+    margin-left: 60px;
+}
+

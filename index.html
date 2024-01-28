@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bramki logiczne</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <h1>Działanie poszczególnych bramek logicznych:</h1>
+
+    <h2>Działanie bramki AND:</h2>
+    <div id="bramkaAND">
+        <label for="x1">
+            <input type="checkbox" id="x1"> x1
+        </label>
+        <label for="x2">
+            <input type="checkbox" id="x2"> x2
+        </label>
+        <img src="zdj/brAND.png" width="100" id="brAND" alt="">
+        <p id="wartoscAND">?</p>
+        <button type="button" onclick="setValueAND()">Oblicz</button>
+    </div> <br>
+
+    <h2>Działanie bramki OR:</h2>
+    <div id="bramkaOR">
+        <label for="y1">
+            <input type="checkbox" id="y1"> x1
+        </label>
+        <label for="y2">
+            <input type="checkbox" id="y2"> x2
+        </label>
+        <img src="zdj/brOR.png" width="100" id="brOR" alt="">
+        <p id="wartoscOR">?</p>
+        <button type="button" onclick="setValueOR()">Oblicz</button>
+    </div> <br>
+
+    <h2>Działanie bramki NOT:</h2>
+    <div id="bramkaNOT">
+        <label for="n1">
+            <input type="checkbox" id="n1"> x1
+        </label>
+        <img src="zdj/brNOT.png" width="100" id="brNOT" alt="">
+        <p id="wartoscNOT">?</p>
+        <button type="button" onclick="setValueNOT()">Oblicz</button>
+    </div> <br>
+
+    <h2>Działanie bramki NAND:</h2>
+    <div id="bramkaNAND">
+        <label for="z1">
+            <input type="checkbox" id="z1"> x1
+        </label>
+        <label for="z2">
+            <input type="checkbox" id="z2"> x2
+        </label>
+        <img src="zdj/brNAND.png" width="100" id="brNAND" alt="">
+        <p id="wartoscNAND">?</p>
+        <button type="button" onclick="setValueNAND()">Oblicz</button>
+    </div> <br>
+
+    <h2>Działanie bramki NOR:</h2>
+    <div id="bramkaNOR">
+        <label for="t1">
+            <input type="checkbox" id="t1"> x1
+        </label>
+        <label for="t2">
+            <input type="checkbox" id="t2"> x2
+        </label>
+        <img src="zdj/brNOR.png" width="100" id="brNOR" alt="">
+        <p id="wartoscNOR">?</p>
+        <button type="button" onclick="setValueNOR()">Oblicz</button>
+    </div> <br>
+
+    <h2>Działanie bramki XOR:</h2>
+    <div id="bramkaXOR">
+        <label for="k1">
+            <input type="checkbox" id="k1"> x1
+        </label>
+        <label for="k2">
+            <input type="checkbox" id="k2"> x2
+        </label>
+        <img src="zdj/brXOR.png" width="100" id="brXOR" alt="">
+        <p id="wartoscXOR">?</p>
+        <button type="button" onclick="setValueXOR()">Oblicz</button>
+    </div> <br>
+
+    <h2>Działanie bramki XNOR:</h2>
+    <div id="bramkaXNOR">
+        <label for="l1">
+            <input type="checkbox" id="l1"> x1
+        </label>
+        <label for="l2">
+            <input type="checkbox" id="l2"> x2
+        </label>
+        <img src="zdj/brXNOR.png" width="100" id="brXNOR" alt="">
+        <p id="wartoscXNOR">?</p>
+        <button type="button" onclick="setValueXNOR()">Oblicz</button>
+    </div> <br>
+
+    <hr>
+
+    <h2>Działanie bramki OR i NOT:</h2>
+    <div id="bramkaORNOT">
+        <label for="m1">
+            <input type="checkbox" id="m1"> x1
+        </label>
+        <label for="m2">
+            <input type="checkbox" id="m2"> x2
+        </label>
+        <img src="zdj/brORNOT.png" width="100" id="brORNOT" alt="">
+        <p id="wartoscORNOT">?</p>
+        <button type="button" onclick="setValueORNOT()">Oblicz</button>
+    </div> <br>
+
+    <h2>Działanie bramki XOR-NOT-NOR:</h2>
+    <div id="bramkaXORNOTNOR">
+        <label for="w1">
+            <input type="checkbox" id="w1"> x1
+        </label>
+        <label for="w2">
+            <input type="checkbox" id="w2"> x2
+        </label>
+        <label for="w3">
+            <input type="checkbox" id="w3"> x3
+        </label>
+        <img src="zdj/brXORNOTNOR.png" width="150" id="brXORNOTNOR" alt="">
+        <p id="wartoscXORNOTNOR">?</p>
+        <button type="button" onclick="setValueXORNOTNOR()">Oblicz</button>
+    </div> <br>
+
+    <h2>Działanie bramki OR-OR-AND:</h2>
+    <div id="bramkaORORAND">
+        <label for="r1">
+            <input type="checkbox" id="r1"> x1
+        </label>
+        <label for="r2">
+            <input type="checkbox" id="r2"> x2
+        </label>
+        <label for="r3">
+            <input type="checkbox" id="r3"> x3
+        </label>
+        <label for="r4">
+            <input type="checkbox" id="r4"> x4
+        </label>
+        <img src="zdj/brORORAND.png" width="200" id="brORORAND" alt="">
+        <p id="wartoscORORAND">?</p>
+        <button type="button" onclick="setValueORORAND()">Oblicz</button>
+    </div> <br>
+
+    <hr>
+
+    <h2>Działanie bramki AND-NOR-XOR:</h2>
+    <div id="bramkaAND_NOR_XOR">
+        <label for="p1">
+            <input type="checkbox" id="p1"> x1
+        </label>
+        <label for="p2">
+            <input type="checkbox" id="p2"> x2
+        </label>
+        <label for="p3">
+            <input type="checkbox" id="p3"> x3
+        </label>
+        <label for="p4">
+            <input type="checkbox" id="p4"> x4
+        </label>
+        <img src="zdj/brANDNORXOR.png" width="200" id="brAND_NOR_XOR" alt="">
+        <div id="wartoscP">
+            <p id="wartoscAND_NOR_XOR1">?</p>
+            <p id="wartoscAND_NOR_XOR2">?</p>    
+        </div>
+        <button type="button" onclick="setValueAND_NOR_XOR()">Oblicz</button>
+    </div> <br>
+    
+</body>
+</html>
